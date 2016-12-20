@@ -55,13 +55,14 @@ apt-get -y update
 # Get stuff:
 #
 # - ack
+# - ccache
 # - gdp
 # - git
 # - python 3.5
 # - tmux 2.4
 # - vim
 
-apt-get -y install ack-grep gdb git python3.5 tmux-next vim
+apt-get -y install ack-grep ccache gdb git python3.5 tmux-next vim
 apt-get remove -y tmux
 rm -f /usr/bin/tmux
 ln -s /usr/bin/tmux-next /usr/bin/tmux
